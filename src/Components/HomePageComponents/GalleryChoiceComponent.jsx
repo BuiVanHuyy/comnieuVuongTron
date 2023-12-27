@@ -9,7 +9,10 @@ function GalleryChoiceComponent() {
       <div className="row w-90">
         {galleryData.map((val, i) => (
           <div key={i} className="home-gallery-item col-sm-4 px-3">
-            <Link to={"/gallery"} onClick={() => setIdMenu(val.id)}>
+            <Link
+              to={"/comnieuVuongTron/gallery"}
+              onClick={() => setIdMenu(val.id)}
+            >
               <img
                 src={`src/assets/img/${val.thumbnail}`}
                 alt={val.title + " photo"}

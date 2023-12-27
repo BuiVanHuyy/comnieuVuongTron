@@ -15,9 +15,6 @@ import { FaPhone, FaFacebookF } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function FooterComponet() {
-  const handleScrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
   return (
     <footer>
       <Row className="footer-top">
@@ -85,19 +82,19 @@ function FooterComponet() {
               </Link>
             </li>
             <li className="footer-menu">
-              <Link to={"/menu"}>
+              <Link to={"/comnieuVuongTron/menu"}>
                 <FaArrowRight className="arrow-footer" />
                 THỰC ĐƠN
               </Link>
             </li>
             <li className="footer-menu">
-              <Link to={"/gallery"}>
+              <Link to={"/comnieuVuongTron/gallery"}>
                 <FaArrowRight className="arrow-footer" />
                 THƯ VIỆN ẢNH
               </Link>
             </li>
             <li className="footer-menu">
-              <Link to={"/order-online"}>
+              <Link to={"/comnieuVuongTron/order-online"}>
                 <FaArrowRight className="arrow-footer" />
                 ĐẶT MÓN ONLINE
               </Link>
@@ -109,7 +106,7 @@ function FooterComponet() {
         className="pt-1 position-relative p-2"
         style={{ backgroundColor: "black" }}
       >
-        <p className="footer-bot" >@ COPYRIGHT 2020 VUONG TRON RESTAURANT</p>
+        <p className="footer-bot">@ COPYRIGHT 2020 VUONG TRON RESTAURANT</p>
         <Button
           onClick={() => window.scrollTo(0, 0)}
           className="footer-button d-flex justify-center align-items-center"

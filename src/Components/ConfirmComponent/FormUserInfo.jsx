@@ -259,7 +259,7 @@ function FormUserInfo() {
           <Col xs={6}>
             <Button
               className="confirm-button w-100"
-              onClick={() => navigate("/order-online")}
+              onClick={() => navigate("/comnieuVuongTron/order-online")}
               variant="danger"
             >
               Đặt món thêm

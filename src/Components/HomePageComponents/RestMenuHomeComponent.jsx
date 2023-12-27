@@ -16,7 +16,10 @@ function RestMenuHomeComponent() {
               key={j}
               className="home-dish-item mb-4 px-3 text-center"
             >
-              <Link to={`/menu`} onClick={() => setIdMenu(item.id)}>
+              <Link
+                to={`/comnieuVuongTron/menu`}
+                onClick={() => setIdMenu(item.id)}
+              >
                 <div className="thumb">
                   <img
                     src={`src/assets/img${item.thumbnail}`}

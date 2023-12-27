@@ -66,7 +66,7 @@ function CartComponent({ setShow, show }) {
             <strong>Tổng cộng: </strong>
             {totalMoney.toLocaleString("vi")} ₫
           </p>
-          <Link to={"/confirmOrder"} className="text-light">
+          <Link to={"/comnieuVuongTron/confirmOrder"} className="text-light">
             <Button className="cartBtn" variant="primary">
               Thanh toán
             </Button>

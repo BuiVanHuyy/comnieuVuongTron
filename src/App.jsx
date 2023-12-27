@@ -29,15 +29,30 @@ function App() {
         <div id="content">
           <ScrollToTop />
           <Routes>
-            <Route path="/">
+            <Route path="/comnieuVuongTron/">
               <Route index element={<HomeComponent />} />
-              <Route path="/about-us" element={<AboutUsComponent />} />
-              <Route path="/menu" element={<MenuComponent />} />
-              <Route path="/gallery" element={<GalleryComponent />} />
-              <Route path="/order-online" element={<OrderOnlineComponent />} />
-              <Route path="/confirmOrder" element={<ConfirmComponent />} />
               <Route
-                path="/bookingTable"
+                path="/comnieuVuongTron/about-us"
+                element={<AboutUsComponent />}
+              />
+              <Route
+                path="/comnieuVuongTron/menu"
+                element={<MenuComponent />}
+              />
+              <Route
+                path="/comnieuVuongTron/gallery"
+                element={<GalleryComponent />}
+              />
+              <Route
+                path="/comnieuVuongTron/order-online"
+                element={<OrderOnlineComponent />}
+              />
+              <Route
+                path="/comnieuVuongTron/confirmOrder"
+                element={<ConfirmComponent />}
+              />
+              <Route
+                path="/comnieuVuongTron/bookingTable"
                 element={<BookingTablePageComponent />}
               />
               <Route path="*" element={<HomeComponent />} />

@@ -126,7 +126,7 @@ function ConfirmModalComponent({ show, setShow }) {
                         <Button
                             variant="primary"
                             onClick={() => {
-                                navigate("/");
+                                navigate("/comnieuVuongTron/");
                             }}
                         >
                             Quay về trang chủ

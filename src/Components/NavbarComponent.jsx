@@ -15,7 +15,7 @@ function NavbarComponent() {
           <div className="logo">
             <Link
               className="nav-link"
-              to={"/"}
+              to={"/comnieuVuongTron/"}
               onClick={() => setActive(false)}
             >
               <img src={logo} alt="" />
@@ -26,7 +26,7 @@ function NavbarComponent() {
               <li>
                 <Link
                   className="nav-link menu-choice"
-                  to={"/about-us"}
+                  to={"/comnieuVuongTron/about-us"}
                   onClick={() => setActive(false)}
                 >
                   GIỚI THIỆU
@@ -35,7 +35,7 @@ function NavbarComponent() {
               <li>
                 <Link
                   className="nav-link menu-choice"
-                  to={"/menu"}
+                  to={"/comnieuVuongTron/menu"}
                   onClick={() => setActive(false)}
                 >
                   THỰC ĐƠN
@@ -44,7 +44,7 @@ function NavbarComponent() {
               <li>
                 <Link
                   className="nav-link menu-choice"
-                  to={"/gallery"}
+                  to={"/comnieuVuongTron/gallery"}
                   onClick={() => setActive(false)}
                 >
                   THƯ VIỆN ẢNH
@@ -53,7 +53,7 @@ function NavbarComponent() {
               <li>
                 <Link
                   className="nav-link menu-choice"
-                  to={"/order-online"}
+                  to={"/comnieuVuongTron/order-online"}
                   onClick={() => setActive(false)}
                 >
                   ĐẶT MÓN ONLINE
@@ -63,7 +63,7 @@ function NavbarComponent() {
                 <Link
                   id="bookingBtn"
                   className="nav-link menu-choice text-light"
-                  to={"/bookingTable"}
+                  to={"/comnieuVuongTron/bookingTable"}
                   onClick={() => setActive(false)}
                 >
                   ĐẶT BÀN

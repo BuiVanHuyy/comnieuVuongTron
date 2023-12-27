@@ -6,7 +6,7 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
   const { idMenu } = useContext(Context);
   useEffect(() => {
-    if (idMenu && pathname == "/menu") {
+    if (idMenu && pathname == "/comnieuVuongTron/menu") {
       document.getElementById(idMenu).scrollIntoView();
     } else {
       window.scrollTo(0, 0);

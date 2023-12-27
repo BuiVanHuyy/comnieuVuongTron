@@ -4,7 +4,7 @@ import logo from "../assets/img/logo/logo2.png";
 function BookingAndOrderComponent() {
     const navigate = useNavigate();
     const handleChangeBooking = () => {
-        navigate("/#bookingTable");
+        navigate("/comnieuVuongTron/#bookingTable");
         setTimeout(() => {
             const bookingTable = document.getElementById("bookingTable");
             if (bookingTable) {
@@ -15,7 +15,7 @@ function BookingAndOrderComponent() {
         }, 100);
     };
     const handleChangeOrder = () => {
-        navigate("/order-online");
+        navigate("/comnieuVuongTron/order-online");
     };
     return (
         <section className="booking-container">
@@ -26,7 +26,9 @@ function BookingAndOrderComponent() {
             <div className="btn-container d-flex justify-content-center mt-4">
                 <button
                     onClick={() => {
-                        navigate("/", { state: { targetId: "bookingTable" } });
+                        navigate("/comnieuVuongTron/", {
+                          state: { targetId: "bookingTable" },
+                        });
                     }}
                 >
                     Đặt Bàn
