@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import BaseComponent from "./Components/BaseComponent";
 import HomeComponent from "./Components/HomePageComponents/HomeComponent";
@@ -9,9 +10,8 @@ import OrderOnlineComponent from "./Components/OrderOnlineComponent/OrderOnlineC
 import ScrollToTop from "./Components/ScrollToTop";
 import AppContext from "./utils/AppContext";
 import ConfirmComponent from "./Components/ConfirmComponent/ConfirmComponent";
-import { useEffect, useState } from "react";
-import LoadingComponent from "./Components/loadingComponent";
 import BookingTablePageComponent from "./Components/BookingTableComponent/BookingTablePageComponent";
+import LoadingComponent from "./Components/loadingComponent";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -36,7 +36,10 @@ function App() {
               <Route path="/gallery" element={<GalleryComponent />} />
               <Route path="/order-online" element={<OrderOnlineComponent />} />
               <Route path="/confirmOrder" element={<ConfirmComponent />} />
-              <Route path="/bookingTable" element={<BookingTablePageComponent />} />
+              <Route
+                path="/bookingTable"
+                element={<BookingTablePageComponent />}
+              />
               <Route path="*" element={<HomeComponent />} />
             </Route>
           </Routes>
