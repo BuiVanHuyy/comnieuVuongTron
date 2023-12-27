@@ -1,0 +1,789 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Water+Brush&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  --primary_color: #952e0b;
+  --secondary_color: #fae815;
+  --text_color: #575756;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  transition: 0.6s;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.6s;
+}
+ul {
+  margin: 0px;
+}
+header {
+  transition: top 0.3s;
+}
+header a {
+  display: block;
+}
+.form-control:focus,
+a.focus {
+  box-shadow: none;
+}
+span.brand-highlight {
+  color: var(--primary_color);
+  font-weight: 600;
+}
+ul.nav-tabs .nav-item button:hover,
+ul.nav-tabs .nav-item button.active {
+  background-color: var(--primary_color) !important;
+  color: var(--secondary_color) !important;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.title-heading {
+  color: var(--primary_color);
+  font-size: 40px;
+  margin-top: 10px;
+}
+.w-90 {
+  width: 90%;
+  margin: 0px auto;
+}
+.w-95 {
+  width: 95%;
+  margin: 0px auto;
+}
+.main-content {
+  margin-top: 63px;
+  overflow: hidden;
+}
+header .logo {
+  width: 180px;
+}
+header .menu ul li {
+  display: inline-block;
+  padding: 0px 17px;
+}
+header .menu ul li a {
+  position: relative;
+}
+header .menu ul li:not(:last-child):not(:nth-child(4)) {
+  border-right: 1px solid black;
+}
+header .menu ul li:not(:last-child) a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 2px;
+  width: 0%;
+  background-color: var(--primary_color);
+  transition: 0.5s;
+}
+header .menu ul li:last-child {
+  background-color: #952e0b;
+}
+header .menu ul li:not(:last-child):hover a::before {
+  width: 100%;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.bar-icon {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+.bar-icon .bar-item {
+  height: 2px;
+  width: 20px;
+  border-radius: 2px;
+  background-color: #000;
+}
+.bar-icon.active .bar-item:first-child {
+  animation: top-icon-animation 0.3s forwards linear;
+}
+.bar-icon.active .bar-item:last-child {
+  animation: bot-icon-animation 0.3s forwards linear;
+}
+.bar-icon .bar-item:first-child {
+  animation: top-icon-reverse-animation 0.3s forwards linear;
+}
+.bar-icon .bar-item:last-child {
+  animation: bot-icon-reverse-animation 0.3s forwards linear;
+}
+@keyframes top-icon-animation {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(2px) rotate(0);
+  }
+  75% {
+    transform: translateY(5px) rotate(0);
+  }
+  100% {
+    transform: translateY(3px) rotate(45deg);
+  }
+}
+@keyframes top-icon-reverse-animation {
+  0% {
+    transform: translateY(3px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(0);
+  }
+  75% {
+    transform: translateY(2px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+@keyframes bot-icon-animation {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-2px) rotate(0);
+  }
+  80% {
+    transform: translateY(-4px) rotate(0);
+  }
+  75% {
+    transform: translateY(-5px) rotate(0);
+  }
+  100% {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+}
+@keyframes bot-icon-reverse-animation {
+  0% {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0);
+  }
+  80% {
+    transform: translateY(-4px) rotate(0);
+  }
+  75% {
+    transform: translateY(-2px) rotate(0);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+.booking-container {
+  padding: 50px 0px;
+  margin: 0px auto;
+}
+.booking-container .thumb {
+  width: 150px;
+  margin: 0px auto;
+}
+.booking-title {
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--bs-danger-text-emphasis);
+}
+.btn-container button {
+  border: none;
+  color: var(--secondary_color);
+  font-size: 20px;
+  padding: 10px 12px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.5s;
+  margin: 0px 5px;
+}
+.btn-container button:first-child {
+  background-color: var(--primary_color);
+}
+.btn-container button:last-child {
+  background-color: transparent;
+  border: 3px solid var(--primary_color);
+  transition: 0.5s;
+}
+.btn-container button:hover {
+  color: #fff;
+}
+.btn-container button:last-child:hover {
+  background-color: var(--primary_color);
+}
+footer {
+  background-color: #111419;
+  font-size: 14px;
+  overflow: hidden;
+}
+footer,
+footer a {
+  color: #929ba4;
+  line-height: 28px;
+}
+footer p {
+  margin-bottom: 5px;
+}
+footer h3.name-brand {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+footer h3.name-brand::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: var(--secondary_color);
+  left: 0px;
+  bottom: 0px;
+}
+footer h4.title-footer {
+  font-size: 20px;
+  color: #fff;
+}
+footer img.footerImg {
+  width: 220px;
+}
+footer .footer-top {
+  padding: 35px 20px;
+}
+footer p.footer-slogan {
+  font-size: 20px;
+}
+footer .middle-col {
+  border-left: 1px solid var(--secondary_color);
+  border-right: 1px solid var(--secondary_color);
+  padding: 0px 20px;
+}
+footer li.footer-menu {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer li.footer-menu .arrow-footer {
+  margin-right: 10px;
+  font-size: 15px;
+  transition: 0.5s;
+}
+footer li.footer-menu:hover a {
+  color: var(--secondary_color);
+}
+footer li.footer-menu:hover .arrow-footer {
+  margin-right: 0px;
+}
+footer .social-network ul li a {
+  transition: 0.5s;
+}
+footer .social-network ul li:hover a {
+  color: var(--secondary_color);
+}
+footer .social-network .socail-icon {
+  font-size: 30px !important;
+}
+footer .footer-button {
+  position: absolute;
+  top: -30%;
+  right: 50%;
+  transform: translateX(50% 50%);
+  background-color: #000;
+  border: none;
+}
+footer .footer-button:hover {
+  background-color: #000;
+}
+footer .scroll-top {
+  transition: 0.5s;
+}
+footer .scroll-top:hover {
+  transform: translateY(-5px);
+}
+.done-notice {
+  font-size: 20px;
+  margin: 0px auto;
+}
+.input-container:last-child {
+  margin: 10px;
+}
+footer p.footer-bot {
+  padding-top: 20px;
+}
+@media (max-width: 1036px) {
+  header .menu ul li {
+    padding: 0px 10px;
+  }
+  footer h3.name-brand,
+  footer .social-network .socail-icon {
+    font-size: 23px !important;
+  }
+} 
+.icon {
+  position: relative;
+}
+.icon .rect {
+  animation: react-anima 2s alternate infinite;
+  background-color: var(--primary_color);
+}
+.icon .circle {
+  border-radius: 50%;
+  background-color: var(--secondary_color);
+  position: absolute;
+  animation: circle_anima 2s alternate infinite;
+}
+.icon .circle::after {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 1.5px;
+  left: 1.5px;
+  z-index: -1;
+}
+.icon .chop {
+  background-color: var(--primary_color);
+  position: absolute;
+  z-index: 5;
+}
+#c_1 {
+  margin-bottom: 15px;
+  animation: chop_1 2s alternate infinite;
+}
+#c_2 {
+  animation: chop_2 2s alternate infinite;
+}
+@keyframes react-anima {
+  0% {
+    width: 0px;
+    height: 0px;
+    transform: rotate(360deg);
+    border-radius: 20px;
+  }
+  75% {
+    transform: rotate(0deg);
+    border-radius: 0px;
+  }
+  80% {
+    width: 125px;
+    height: 125px;
+  }
+  100% {
+    width: 125px;
+    height: 125px;
+  }
+}
+@keyframes chop_1 {
+  0% {
+    height: 0px;
+    width: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+  35% {
+    transform: rotate(-45deg);
+    height: 1px;
+    width: 5px;
+  }
+  50% {
+    height: 3px;
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(0deg);
+    width: 125px;
+    height: 3px;
+    bottom: 20px;
+    right: 40px;
+  }
+  100% {
+    transform: rotate(0deg);
+    width: 125px;
+    height: 3px;
+    bottom: 20px;
+    right: 40px;
+  }
+}
+@keyframes chop_2 {
+  0% {
+    height: 0px;
+    width: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+  35% {
+    transform: rotate(45deg);
+    height: 1px;
+    width: 5px;
+  }
+  50% {
+    height: 3px;
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(0deg);
+    width: 125px;
+    height: 3px;
+    bottom: 20px;
+    right: 40px;
+  }
+  100% {
+    transform: rotate(0deg);
+    width: 125px;
+    height: 3px;
+    bottom: 20px;
+    right: 40px;
+  }
+}
+@keyframes circle_anima {
+  0% {
+    width: 0px;
+    height: 0px;
+    top: -150px;
+    left: -300px;
+  }
+  25% {
+    width: 50px;
+    height: 50px;
+  }
+  80% {
+    width: 125px;
+    height: 125px;
+    top: 30px;
+    left: 30px;
+  }
+  100% {
+    width: 125px;
+    height: 125px;
+    top: 30px;
+    left: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .modal-content {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 992px) {
+  header .menu ul li a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 962px) {
+  footer h3.name-brand,
+  footer .social-network .socail-icon {
+    font-size: 20px !important;
+  }
+  footer li.footer-menu {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 926px) {
+  .title-heading {
+    font-size: 35px;
+  }
+}
+@media (max-width: 912px) {
+  header .menu ul li a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 857px) {
+  footer h3.name-brand {
+    font-size: 18px !important;
+  }
+  footer .footer-slogan {
+    font-size: 16px !important;
+  }
+  footer li.footer-menu {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 839px) {
+  header .menu ul li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 821px) {
+  .booking-title {
+    font-size: 25px;
+  }
+  .btn-container button {
+    font-size: 18px;
+    padding: 5px;
+  }
+}
+@media (max-width: 803px) {
+  header .logo {
+    width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 56px;
+  }
+  header .menu ul li {
+    padding: 0px 5px;
+  }
+  .title-heading {
+    font-size: 30px;
+  }
+  .Carousel-vegetarian {
+    padding: 30px !important;
+  }
+  .review-item {
+    padding: 0px 20px !important;
+  }
+  p.reviewer-content {
+    font-size: 13px !important;
+  }
+  p.review-source {
+    font-size: 14px !important;
+  }
+  footer h3.name-brand {
+    font-size: 20px !important;
+  }
+  footer .footer-slogan {
+    font-size: 16px !important;
+  }
+  footer .middle-col {
+    border: none;
+  }
+  footer img.footerImg {
+    width: 160px;
+    margin-top: 10px;
+  }
+  footer .footer-top {
+    padding: 20px 10px !important;
+  }
+  footer .first-col,
+  footer .middle-col {
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  footer .social-network .socail-icon {
+    font-size: 25px !important;
+  }
+  footer,
+  footer a {
+    line-height: 20px;
+  }
+  footer li.footer-menu {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 714px) {
+  header .logo {
+    width: 120px;
+  }
+}
+@media (max-width: 690px) {
+  .main-content {
+    margin-top: 48px;
+  }
+  .btn-container button {
+    font-size: 15px;
+  }
+  .booking-title {
+    font-size: 20px;
+  }
+  .booking-container .thumb {
+    width: 120px;
+  }
+  header .menu ul li a {
+    font-size: 10px;
+  }
+  footer li.footer-menu {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 671px) {
+  .title-heading {
+    font-size: 25px;
+  }
+}
+@media (max-width: 608px) {
+  header .logo {
+    width: 100px;
+  }
+  ul {
+    padding: 0px;
+  }
+}
+@media (max-width: 576px) {
+  header .logo {
+    width: 130px;
+  }
+  .bar-icon {
+    display: block;
+    transition: 0.5s;
+  }
+  header .menu {
+    width: 40%;
+    position: absolute;
+    top: 48px;
+    left: -200px;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  header .menu.active {
+    opacity: 1;
+    left: 0px;
+  }
+  header .menu ul {
+    padding: 0px 10px 10px;
+  }
+  header .menu ul li:not(:last-child) {
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-right: none;
+    border-bottom: 1px solid #9c9b9b;
+  }
+  header .menu ul li:nth-child(4) {
+    border: none;
+  }
+  header .menu ul li:last-child {
+    padding: 5px;
+    width: 100%;
+  }
+  header .menu ul li a {
+    color: var(--text_color);
+    font-size: 13px;
+  }
+  .modal-body {
+    justify-content: center;
+  }
+  footer li.footer-menu a {
+    font-size: 16px !important;
+  }
+  footer .social-ul {
+    margin-bottom: 10px !important;
+  }
+}
+@media (max-width: 547px) {
+  .title-heading {
+    font-size: 22px;
+  }
+  footer .social-network .socail-icon {
+    font-size: 20px !important;
+  }
+  footer .footer-top {
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 527px) {
+  .reviewer-name {
+    font-size: 17px !important;
+  }
+}
+@media (max-width: 465px) {
+  .reviewer-content {
+    padding-bottom: 10px;
+  }
+  .review-item {
+    padding: 0px !important;
+  }
+  .reviewer-name {
+    font-size: 20px !important;
+  }
+  p.reviewer-content {
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 484px) {
+  .title-heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .title-heading {
+    font-size: 18px;
+  }
+  .rect {
+
+  }
+}
+@media (max-width: 400px) {
+  .title-heading {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .booking-title {
+    font-size: 16px;
+  }
+  .btn-container button {
+    font-size: 12px;
+  }
+  .booking-container .thumb {
+    width: 100px;
+  }
+}
+@media (max-width: 377px) {
+  header .menu {
+    width: 45%;
+  }
+}
+@media (max-width: 290px) {
+  .title-heading {
+    font-size: 15px;
+  }
+}
+.confirm-container {
+  display: none;
+}
+.confirm-title {
+  color: var(--primary_color);
+  font-weight: 600;
+}
+.confirm-thank {
+  color: var(--text_color);
+  font-weight: 500;
+}
+.loadingThumb {
+  animation: flip 1s alternate infinite;
+}
+@keyframes flip {
+  0% {
+    transform: scaleX(-1);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
