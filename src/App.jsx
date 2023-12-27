@@ -11,7 +11,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import AppContext from "./utils/AppContext";
 import ConfirmComponent from "./Components/ConfirmComponent/ConfirmComponent";
 import BookingTablePageComponent from "./Components/BookingTableComponent/BookingTablePageComponent";
-import LoadingComponent from "./Components/loadingComponent";
+import LoadingComponent from "./Components/LoadingComponent";
 
 function App() {
   const [loading, setLoading] = useState(true);
