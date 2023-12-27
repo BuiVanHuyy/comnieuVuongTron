@@ -25,49 +25,80 @@ function ReviewComponent() {
         },
     };
     return (
-        <>
-            <div className="Carousel-vegetarian p-5">
-                <h1 className="title-heading text-center pb-3">TRẢI NGHIỆM KHÁCH HÀNG</h1>
+      <>
+        <div className="Carousel-vegetarian p-5">
+          <h1 className="title-heading text-center pb-3">
+            TRẢI NGHIỆM KHÁCH HÀNG
+          </h1>
 
-                <Carousel
-                    responsive={responsive}
-                    draggable={true}
-                    swipeable={true}
-                    showDots={true}
-                    infinite={true}
-                    autoPlaySpeed={3000}
-                    autoPlay={true}
-                    arrows={false}
+          <Carousel
+            responsive={responsive}
+            draggable={true}
+            swipeable={true}
+            showDots={true}
+            infinite={true}
+            autoPlaySpeed={3000}
+            autoPlay={true}
+            arrows={false}
+          >
+            {reviewData.map((val, i) => (
+              <div
+                key={i}
+                style={{ userSelect: "none", cursor: "pointer" }}
+                className="review-item text-center px-5"
+              >
+                <div
+                  className="thumb"
+                  style={{ width: "100px", margin: "0px auto" }}
                 >
-                    {reviewData.map((val, i) => (
-                        <div key={i} style={{ userSelect: "none", cursor: "pointer" }} className="review-item text-center px-5">
-                            <div className="thumb" style={{ width: "100px", margin: "0px auto" }}>
-                                <Image src={`src/assets/${val.thumb}`} style={{ pointerEvents: "none" }} roundedCircle />
-                            </div>
-                            <div className="info-reviewer">
-                                <h5 style={{ fontWeight: "700", fontSize: "20px" }} className="reviewer-name mt-3">
-                                    {val.name}
-                                </h5>
-                                <p className="review-source" style={{ color: "#9c9b9b", fontWeight: "500", margin: "10px 0px 15px" }}>
-                                    Facebok Reviews
-                                </p>
-                                <div className="stars mb-2">
-                                    {[...Array(val.stars)].map((item, i) => (
-                                        <FontAwesomeIcon key={i} icon={faStar} style={{ color: "#fae815" }} />
-                                    ))}
-                                    {[...Array(5 - val.stars)].map((item, i) => (
-                                        <FontAwesomeIcon key={i + val.stars} icon={faStar} style={{ color: "gray" }} />
-                                    ))}
-                                </div>
-                                <p className="reviewer-content" style={{ fontSize: "15px" }}>
-                                    {val.reviews}
-                                </p>
-                            </div>
-                        </div>
+                  <Image
+                    src={`../../../public/${val.thumb}`}
+                    style={{ pointerEvents: "none" }}
+                    roundedCircle
+                  />
+                </div>
+                <div className="info-reviewer">
+                  <h5
+                    style={{ fontWeight: "700", fontSize: "20px" }}
+                    className="reviewer-name mt-3"
+                  >
+                    {val.name}
+                  </h5>
+                  <p
+                    className="review-source"
+                    style={{
+                      color: "#9c9b9b",
+                      fontWeight: "500",
+                      margin: "10px 0px 15px",
+                    }}
+                  >
+                    Facebok Reviews
+                  </p>
+                  <div className="stars mb-2">
+                    {[...Array(val.stars)].map((item, i) => (
+                      <FontAwesomeIcon
+                        key={i}
+                        icon={faStar}
+                        style={{ color: "#fae815" }}
+                      />
                     ))}
-                </Carousel>
-            </div>
-        </>
+                    {[...Array(5 - val.stars)].map((item, i) => (
+                      <FontAwesomeIcon
+                        key={i + val.stars}
+                        icon={faStar}
+                        style={{ color: "gray" }}
+                      />
+                    ))}
+                  </div>
+                  <p className="reviewer-content" style={{ fontSize: "15px" }}>
+                    {val.reviews}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </>
     );
 }
 

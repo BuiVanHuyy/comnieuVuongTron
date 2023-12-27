@@ -1,5 +1,5 @@
-import video1 from "../../assets/img/videos/vid_1.mp4";
-import video2 from "../../assets/img/videos/vid_2.mp4";
+import video1 from "../../../public/img/videos/vid_1.mp4";
+import video2 from "../../../public/img/videos/vid_2.mp4";
 function IntroAboutUsComponent() {
     return (
         <section>

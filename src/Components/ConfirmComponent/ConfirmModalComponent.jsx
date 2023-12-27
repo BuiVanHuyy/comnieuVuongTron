@@ -6,7 +6,7 @@ import { ListGroup, Table } from "react-bootstrap";
 import { useContext, useState } from "react";
 import { Context } from "../../utils/AppContext";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/img/logo/logo2.png";
+import logo from "../../../public/img/logo/logo2.png";
 import axios from "axios";
 
 ConfirmModalComponent.propTypes = {

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
+import thumbnail from "../../../public/img/gallery/overView3.jpg";
 import { MdDownloadDone } from "react-icons/md";
 function BookingTableComponent() {
   const currentDate = new Date();
@@ -89,7 +90,7 @@ function BookingTableComponent() {
       <Row>
         <Col sm={4} className="p-0">
           <div className="thumbnail position-relative">
-            <img src="src/assets/img/gallery/overView3.jpg" alt="" />
+            <img src={thumbnail} alt="" />
             <div className="float-content01 text-center position-absolute">
               <h1>ĐẶT BÀN</h1>
               <p>THỜI GIAN PHỤC VỤ</p>

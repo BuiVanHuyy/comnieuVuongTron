@@ -6,7 +6,7 @@ h1.title {
     color: var(--primary_color);
 }
 .intro-item {
-    background-image: url(../../src/assets/img/backGround/introbg.png);
+    background-image: url(../img/backGround/introbg.png);
 }
 .intro-item .right {
     padding: 10px 20px;

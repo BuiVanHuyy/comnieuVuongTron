@@ -49,8 +49,8 @@ function DishItemModal({ item, show, setShow }) {
               <img
                 src={
                   item.dish_thumb
-                    ? "src/assets/" + item.dish_thumb
-                    : "src/assets/img/menu/dishItem/icon.jpg"
+                    ? "../../../public/" + item.dish_thumb
+                    : "../../../public/img/menu/dishItem/icon.jpg"
                 }
               />
             </Col>

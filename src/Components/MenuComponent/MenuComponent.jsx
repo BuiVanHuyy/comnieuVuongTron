@@ -55,14 +55,14 @@ function MenuComponent() {
                   <div className="thumb col-md-6 px-3">
                     <img
                       className="rounded"
-                      src={`src/assets/img/menu/${val.thumb_1}`}
+                      src={`../../../public/img/menu/${val.thumb_1}`}
                       alt={`Thumbnail 1 for ${val.titleHeading}`}
                     />
                   </div>
                   <div className="thumb col-md-6 px-3">
                     <img
                       className="rounded"
-                      src={`src/assets/img/menu/${val.thumb_2}`}
+                      src={`../../../public/img/menu/${val.thumb_2}`}
                       alt={`Thumbnail 2 for ${val.titleHeading}`}
                     />
                   </div>
@@ -94,7 +94,7 @@ function MenuComponent() {
                     <div className="col-12 col-md-4">
                       <img
                         className="rounded"
-                        src={`src/assets/img/${item.thumb}`}
+                        src={`../../../public/img/${item.thumb}`}
                       />
                     </div>
                     <div className="col-12 col-md-8 dish-list">

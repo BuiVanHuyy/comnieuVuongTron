@@ -1,7 +1,7 @@
 import { Context } from "../../utils/AppContext";
 import { useContext, useEffect, useState } from "react";
 import { Image, Col, Row, ListGroup } from "react-bootstrap";
-import banner from "../../assets/img/banner/orderOnline.png";
+import banner from "../../../public/img/banner/orderOnline.png";
 import { IoCartOutline, IoHeart, IoSearch } from "react-icons/io5";
 import "../../../public/css/orderOnline.css";
 import MenuOrderOnlineComponent from "./MenuOrderOnlineComponent";
@@ -133,8 +133,8 @@ function OrderOnlineComponent() {
                               rounded
                               src={
                                 val.dish_thumb
-                                  ? "src/assets/" + val.dish_thumb
-                                  : "src/assets/img/menu/dishItem/icon.jpg"
+                                  ? "../../../public/" + val.dish_thumb
+                                  : "../../../public/img/menu/dishItem/icon.jpg"
                               }
                             />
                           </Col>

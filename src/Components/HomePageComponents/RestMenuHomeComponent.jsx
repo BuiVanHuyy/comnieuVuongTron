@@ -22,7 +22,7 @@ function RestMenuHomeComponent() {
               >
                 <div className="thumb">
                   <img
-                    src={`src/assets/img${item.thumbnail}`}
+                    src={`../../../public/img${item.thumbnail}`}
                     alt={item.titleItem}
                   />
                 </div>

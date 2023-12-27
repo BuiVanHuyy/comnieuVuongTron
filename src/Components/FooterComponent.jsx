@@ -1,5 +1,5 @@
 import { Button, Col, Row } from "react-bootstrap";
-import bct from "../assets/img/backGround/dathongbaobct.png";
+import bct from "../../public/img/backGround/dathongbaobct.png"
 import {
   FaArrowRight,
   FaGoogle,
