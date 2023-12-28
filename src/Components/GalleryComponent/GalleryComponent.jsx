@@ -29,7 +29,7 @@ function GalleryComponent() {
               <Row>
                 {val.imgSrcs.map((item, j) => (
                   <Col key={j} xs={6} sm={4} md={3} className="p-1">
-                    <Image src={"../../../public/img/" + item} rounded />
+                    <Image src={item} rounded />
                   </Col>
                 ))}
               </Row>

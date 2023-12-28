@@ -52,7 +52,7 @@ function ReviewComponent() {
                   style={{ width: "100px", margin: "0px auto" }}
                 >
                   <Image
-                    src={`../../../public/${val.thumb}`}
+                    src={val.thumb}
                     style={{ pointerEvents: "none" }}
                     roundedCircle
                   />

@@ -21,10 +21,7 @@ function RestMenuHomeComponent() {
                 onClick={() => setIdMenu(item.id)}
               >
                 <div className="thumb">
-                  <img
-                    src={"../../../public/img" + item.thumbnail}
-                    alt={item.titleItem}
-                  />
+                  <img src={item.thumbnail} alt={item.titleItem} />
                 </div>
                 <h3 className="dish-title">{item.titleItem}</h3>
               </Link>

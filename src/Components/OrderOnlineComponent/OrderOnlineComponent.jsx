@@ -133,8 +133,8 @@ function OrderOnlineComponent() {
                               rounded
                               src={
                                 val.dish_thumb
-                                  ? "../../../public/" + val.dish_thumb
-                                  : "../../../public/img/menu/dishItem/icon.jpg"
+                                  ? val.dish_thumb
+                                  : "https://lh3.google.com/u/0/d/1yzI3CV0iewtwkXrP_MysrPogwlnKP8FI=w200-h190-p-k-rw-v1-nu-iv1"
                               }
                             />
                           </Col>

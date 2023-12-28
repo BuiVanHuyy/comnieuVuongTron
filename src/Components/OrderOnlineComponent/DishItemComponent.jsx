@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Button, Card } from "react-bootstrap";
 import PropTypes from "prop-types";
 import { IoHeart } from "react-icons/io5";
-import bestSellerIcon from "../../../public/img/logo/bestSeller.png";
+import bestSellerIcon from "../../assets";
 import { Context } from "../../utils/AppContext";
 import DishItemModal from "./DishItemModal";
 

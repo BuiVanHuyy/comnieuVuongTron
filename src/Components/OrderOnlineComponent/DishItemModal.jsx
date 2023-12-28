@@ -49,8 +49,8 @@ function DishItemModal({ item, show, setShow }) {
               <img
                 src={
                   item.dish_thumb
-                    ? "../../../public/" + item.dish_thumb
-                    : "../../../public/img/menu/dishItem/icon.jpg"
+                    ? item.dish_thumb
+                    : "https://lh3.google.com/u/0/d/1yzI3CV0iewtwkXrP_MysrPogwlnKP8FI=w200-h190-p-k-rw-v1-nu-iv1"
                 }
               />
             </Col>

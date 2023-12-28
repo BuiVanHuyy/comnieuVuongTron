@@ -14,7 +14,7 @@ function GalleryChoiceComponent() {
               onClick={() => setIdMenu(val.id)}
             >
               <img
-                src={`../../../public/img/${val.thumbnail}`}
+                src={val.thumbnail}
                 alt={val.title + " photo"}
               />
               <h3 className="text-center mt-1">{val.title}</h3>
