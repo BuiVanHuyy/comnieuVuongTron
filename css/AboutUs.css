@@ -1,0 +1,66 @@
+video {
+    width: 100%;
+}
+h1.title {
+    font-size: 30px;
+    color: var(--primary_color);
+}
+.intro-item {
+    background-image: url(../img/backGround/introbg.png);
+}
+.intro-item .right {
+    padding: 10px 20px;
+}
+.intro-item .right .name {
+    color: var(--primary_color);
+}
+.intro-item .right .slogan {
+    font-family: "Water Brush", cursive;
+}
+.intro-item .right .intro_content {
+    line-height: 28px;
+    color: var(--bs-body-color);
+    font-size: var(--bs-body-font-size);
+}
+.overView h4 {
+    color: var(--primary_color);
+    margin-bottom: 20px;
+}
+@media (max-width: 821px) {
+    .booking_title {
+        font-size: 25px;
+    }
+}
+@media (max-width: 700px) {
+    .title {
+        font-size: 25px !important;
+    }
+}
+@media (max-width: 690px) {
+    .booking_title {
+        font-size: 20px;
+    }
+}
+@media (max-width: 580px) {
+    .title {
+        font-size: 20px !important;
+    }
+}
+@media (max-width: 500px) {
+    .booking_container {
+        padding-top: 0px;
+    }
+    .booking_container .thumb {
+        width: 15%;
+    }
+}
+@media (max-width: 465px) {
+    .title {
+        font-size: 15px !important;
+    }
+}
+@media (max-width: 360px) {
+    .title {
+        font-size: 13px !important;
+    }
+}

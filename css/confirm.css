@@ -1,0 +1,125 @@
+.reciept {
+  border: 1px solid black;
+  overflow: hidden;
+}
+.reciept .table-heading,
+.confirm-table-heading {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 0px;
+  border-bottom: 1px solid black;
+}
+.comfirm-product-item,
+.cart-product-item {
+  border-bottom: 1px dashed gray;
+  padding: 5px 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.comfirm-product-item:last-child,
+.cart-product-item:last-child {
+  border-bottom: none;
+}
+.cart-product-requirement {
+  font-size: 13px;
+}
+@media (max-width: 1110px) {
+  .confirm-table-heading {
+    font-size: 18px;
+  }
+  .confirm-item-col {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 939px) {
+  .confirm-table-heading {
+    font-size: 16px;
+    font-weight: 600;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .confirm-item-col {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 768px) {
+  #confirm-right {
+    margin-top: 30px;
+  }
+  #confirm-container {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .confirm-table-heading {
+    font-size: 18px;
+  }
+  .confirm-item-col {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 700px) {
+  .confirm-table-heading {
+    font-size: 16px;
+  }
+  .confirm-item-col {
+    text-align: left;
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 575px) {
+  .confirm-table-heading {
+    font-size: 14px;
+  }
+  .confirm-item-col {
+    text-align: left;
+    font-size: 12px !important;
+    white-space: wrap;
+    text-overflow: unset;
+  }
+  #confirm-container {
+    width: 95%;
+  }
+  .reciept {
+    border: 1px solid black;
+    overflow: auto;
+  }
+  .confirm-form-item {
+    font-size: 16px;
+  }
+  .userName,
+  .userPhoneNum,
+  .address,
+  .cartNote,
+  .userStreet {
+    font-size: 14px;
+  }
+}
+@media (max-width: 470px) {
+  .confirm-item-col {
+    padding: 0px 5px;
+  }
+  #confirm-container {
+    width: 100%;
+  }
+  #confirm-left {
+    padding: 0px;
+  }
+  .reciept {
+    border: 1px solid black;
+    overflow: auto;
+  }
+}
+@media (max-width: 425px) {
+  .confirm-table-heading {
+    text-overflow: initial;
+    overflow: auto;
+    white-space: wrap;
+  }
+  .confirm-form-item {
+    font-size: 14px !important;
+  }
+  .confirm-button {
+    font-size: 13px;
+  }
+}

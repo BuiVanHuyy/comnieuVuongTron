@@ -1,0 +1,355 @@
+.home-intro {
+  padding: 30px 0px;
+  background-image: url("../img/backGround/bg-1.jpg");
+}
+.home-intro .home-title {
+  margin: 20px 0px 45px;
+}
+.home-intro .home-slogan {
+  font-family: "Water Brush", cursive;
+  font-size: 25px;
+}
+.home-intro p {
+  line-height: 28px;
+}
+.home-menu {
+  background-image: url(../img/backGround/menu-bg3.jpg);
+}
+.home-menu .home-menu-cate .thumb {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.home-menu .home-menu-cate .thumb:hover img {
+  scale: 1.05;
+}
+.cus_thumb {
+  width: 100px;
+  margin: 0px auto;
+}
+.cus_name {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.cus_desc h6 {
+  padding: 10px 0px;
+  color: #9c9b9b;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #9c9b9b;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.home-gallery-item h3 {
+  font-size: 24px;
+  margin: 20px 0px 10px;
+  color: var(--text_color);
+  text-align: center;
+}
+.home-gallery-item p {
+  font-weight: 300;
+}
+.from-booking {
+  background-color: #000;
+}
+.from-booking label {
+  color: #9c9b9b;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.form-check {
+  display: inline-flex;
+  align-items: center;
+}
+.dish-title {
+  font-family: "Montserrat", sans-serif;
+  color: #8d8b8b;
+  margin-top: 10px;
+  font-size: 24px;
+}
+#bookingTable input,
+textarea {
+  display: block;
+  width: 100%;
+  border-radius: var(--bs-border-radius);
+  background-color: rgb(33, 3, 3) !important;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.from-booking button {
+  border: none;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: var(--secondary_color);
+  color: #fff;
+}
+.process {
+  display: none;
+}
+.thumbnail img {
+  filter: brightness(50%);
+}
+.float-content01,
+.float-content02 {
+  color: #f3f3f3;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.float-content01 {
+  top: 70px;
+}
+.float-content01 p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.float-content02 {
+  bottom: 20px;
+}
+#bookingTableBtn:hover {
+  background-color: #fbeb3f;
+}
+@media (max-width: 1141px) {
+  .home-gallery-item h3 {
+    font-size: 20px;
+  }
+  .home-gallery-item p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1155px) {
+  .from-booking button {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 7px;
+  }
+  .booking_input {
+    padding: 7px 10px;
+  }
+}
+@media (max-width: 1081px) {
+  .thumbnail h1 {
+    font-size: 30px !important;
+  }
+  .thumbnail p {
+    font-size: 15px !important;
+  }
+  .form_container {
+    padding: 30px 0px !important;
+  }
+}
+@media (max-width: 1036px) {
+  .input_item {
+    padding: 0px 10px !important;
+  }
+}
+@media (max-width: 999px) {
+  .form_container {
+    padding: 10px !important;
+  }
+}
+@media (max-width: 972px) {
+  .from-booking button {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 7px;
+  }
+  .booking_input {
+    padding: 7px 10px;
+  }
+}
+@media (max-width: 926px) {
+  .home-gallery-item h3 {
+    font-size: 18px;
+  }
+  .home-gallery-item p {
+    font-size: 13px;
+  }
+  .thumbnail h1 {
+    font-size: 26px !important;
+  }
+  .thumbnail p {
+    font-size: 13px !important;
+  }
+  .dish-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 796px) {
+  .thumbnail h1 {
+    font-size: 23px !important;
+  }
+  .thumbnail p {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 767px) {
+  .banner-corousel {
+    width: 100% !important;
+  }
+  .home-dish-item {
+    padding: 0px !important;
+  }
+  .home-gallery-item {
+    padding: 0px 5px !important;
+  }
+  .home-intro .home-title {
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 730px) {
+  .from-booking label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .home-gallery-item h3 {
+    font-size: 16px;
+  }
+  .home-gallery-item p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 694px) {
+  .home-gallery-item h3 {
+    font-size: 15px;
+  }
+  .home-gallery-item p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 690px) {
+  .home-intro .home-slogan {
+    font-size: 20px;
+  }
+}
+@media (max-width: 627px) {
+  .thumbnail h1 {
+    font-size: 20px !important;
+  }
+  .thumbnail p {
+    font-size: 9px !important;
+  }
+}
+@media (max-width: 595px) {
+  .home-gallery-item h3 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 581px) {
+  .from-booking label {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 575px) {
+  .home-intro .home-title {
+    margin: 20px 0px 25px;
+  }
+  .home-intro p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .home-menu .home-menu-cate {
+    padding: 0px 20px;
+  }
+  .home-menu .home-menu-cate .thumb {
+    margin: 0px 20px !important;
+  }
+  .dish_home-title {
+    font-size: 1.3rem;
+  }
+  .home-menu {
+    padding: 2rem 0px !important;
+  }
+  .home-gallery-item {
+    padding: 0px 50px !important;
+  }
+  .home-gallery-item h3 {
+    font-size: 24px !important;
+  }
+  .home-gallery-item p {
+    font-size: 20px !important;
+    margin-bottom: 20px;
+  }
+  .thumbnail h1 {
+    font-size: 35px !important;
+  }
+  .thumbnail p {
+    font-size: 20px !important;
+  }
+  .form_container {
+    padding: 30px 20px !important;
+  }
+  .from-booking label {
+    font-size: 20px !important;
+  }
+  .dish-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 430px) {
+  .home-menu .home-menu-cate .thumb {
+    margin: 0px 10px !important;
+  }
+  .home-menu .home-menu-cate {
+    padding: 0px 10px;
+  }
+  .home-intro .home-title {
+    margin: 20px 0px;
+  }
+  .dish_home-title {
+    font-size: 1.1rem;
+  }
+  .home-gallery-item h3 {
+    font-size: 20px !important;
+  }
+  .home-gallery-item p {
+    font-size: 15px !important;
+  }
+  .thumbnail h1 {
+    font-size: 30px !important;
+  }
+  .thumbnail p {
+    font-size: 18px !important;
+  }
+  .from-booking label {
+    font-size: 15px !important;
+  }
+  .form_container {
+    padding: 30px 0px !important;
+  }
+}
+@media (max-width: 343px) {
+  .home-intro .home-slogan {
+    font-size: 15px;
+  }
+  .home-intro p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .thumbnail h1 {
+    font-size: 25px !important;
+  }
+  .thumbnail p {
+    font-size: 15px !important;
+  }
+  .home-gallery-item h3 {
+    font-size: 18px !important;
+  }
+  .home-gallery-item {
+    padding: 0px 30px !important;
+  }
+}
+@media (max-width: 290px) {
+  .dish-title {
+    font-size: 12px;
+  }
+  .home-gallery-item h3 {
+    font-size: 13px !important;
+  }
+  .home-gallery-item p {
+    font-size: 10px !important;
+  }
+}
