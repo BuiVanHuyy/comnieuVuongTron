@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../public/img/logo/vuongtronlogo.png";
+import logo from "../../public/img/logo/vuongtronLogo.png";
 import { useState } from "react";
 function NavbarComponent() {
   const [isActive, setActive] = useState(false);
