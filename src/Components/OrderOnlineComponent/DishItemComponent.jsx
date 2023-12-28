@@ -30,8 +30,8 @@ function DishItemComponent({ item }) {
             variant="top"
             src={
               item.dish_thumb
-                ? "../../../public/" + item.dish_thumb
-                : "../../../public/img/menu/dishItem/icon.jpg"
+                ? item.dish_thumb
+                : "https://lh3.google.com/u/0/d/1yzI3CV0iewtwkXrP_MysrPogwlnKP8FI=w1366-h315-iv1"
             }
           />
           <div
