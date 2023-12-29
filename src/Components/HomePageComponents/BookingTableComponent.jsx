@@ -148,6 +148,7 @@ function BookingTableComponent() {
             <Row>
               <Col>
                 <Button
+                  style={{ color: "black", fontWeight: "600" }}
                   onClick={handleBookingTable}
                   className="w-100"
                   id="bookingTableBtn"
