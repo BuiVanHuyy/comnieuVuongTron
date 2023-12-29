@@ -50,7 +50,7 @@ function DishItemModal({ item, show, setShow }) {
                 src={
                   item.dish_thumb
                     ? item.dish_thumb
-                    : "https://lh3.google.com/u/0/d/1yzI3CV0iewtwkXrP_MysrPogwlnKP8FI=w200-h190-p-k-rw-v1-nu-iv1"
+                    : "https://drive.google.com/uc?export=view&id=1yzI3CV0iewtwkXrP_MysrPogwlnKP8FI"
                 }
               />
             </Col>

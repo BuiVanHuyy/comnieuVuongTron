@@ -31,7 +31,7 @@ function DishItemComponent({ item }) {
             src={
               item.dish_thumb
                 ? item.dish_thumb
-                : "https://lh3.google.com/u/0/d/1yzI3CV0iewtwkXrP_MysrPogwlnKP8FI=w1366-h315-iv1"
+                : "https://drive.google.com/uc?export=view&id=1yzI3CV0iewtwkXrP_MysrPogwlnKP8FI"
             }
           />
           <div
