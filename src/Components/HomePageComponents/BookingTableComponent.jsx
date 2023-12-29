@@ -77,16 +77,19 @@ function BookingTableComponent() {
     }
   };
   const createBooking = async (bookingUser) => {
-    bookingUser.name = document.querySelector("#bookingName").value;
+    bookingUser.bookingName = document.querySelector("#bookingName").value;
     bookingUser.bookingPhone = document.querySelector("#bookingPhone").value;
     bookingUser.bookingDateTime = document.querySelector("#dateTime").value;
+    bookingUser.bookingRequirement =
+      document.querySelector("#requirements").value;
+    bookingUser.bookingQuality = document.querySelector("#cusQuality").value;
     const result = await axios.post(
       "https://65784f07f08799dc8044df82.mockapi.io/cartList",
       bookingUser
     );
   };
   return (
-    <section id="bookingTable" className="from-booking mt-5">
+    <section id="bookingTable" className="from-booking">
       <Row>
         <Col sm={4} className="p-0">
           <div className="thumbnail position-relative">

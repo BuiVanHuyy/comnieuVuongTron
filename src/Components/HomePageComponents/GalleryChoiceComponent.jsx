@@ -4,7 +4,7 @@ import { Context } from "../../utils/AppContext";
 function GalleryChoiceComponent() {
   const { galleryData, setIdMenu } = useContext(Context);
   return (
-    <section className="home-gallery">
+    <section className="home-gallery mb-5">
       <h1 className="title-heading pb-3 text-center">THƯ VIỆN ẢNH</h1>
       <div className="row w-90">
         {galleryData.map((val, i) => (

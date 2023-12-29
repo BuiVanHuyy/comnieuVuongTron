@@ -1,10 +1,10 @@
 import { Button, Col, Row } from "react-bootstrap";
-import bct from "../../public/img/backGround/dathongbaobct.png"
+import bct from "../../public/img/backGround/dathongbaobct.png";
 import {
   FaArrowRight,
   FaGoogle,
-  FaInstagram,
   FaLocationDot,
+  FaTiktok,
 } from "react-icons/fa6";
 import {
   MdAvTimer,
@@ -63,13 +63,19 @@ function FooterComponet() {
                 </a>
               </li>
               <li className="socail-icon d-inline-block me-4 ">
-                <a href="">
+                <a
+                  href="https://www.google.com/search?q=com+nieu+vuong+tron&oq=com+nieu+vuong+tron&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQIxgnMgkIAhAAGBMYgAQyDwgDEC4YExivARjHARiABDIKCAQQABgTGBYYHjIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDYzNjNqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                  target="blank"
+                >
                   <FaGoogle />
                 </a>
               </li>
               <li className="socail-icon d-inline-block">
-                <a href="">
-                  <FaInstagram />
+                <a
+                  href="https://www.tiktok.com/@riviuphanthiet/video/7297549329085009170"
+                  target="blank"
+                >
+                  <FaTiktok />
                 </a>
               </li>
             </ul>
