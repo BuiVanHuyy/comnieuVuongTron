@@ -116,11 +116,15 @@ function FormUserInfo() {
       districtValue: "",
       wardValue: "",
     });
-    setSelectedDistrict({ name: "", code: "" });
-    setSelectedWard({ name: "", code: "" });
-    fetch(`https://provinces.open-api.vn/api/p/${cityCode}/?depth=3`)
-      .then((response) => response.json())
-      .then((data) => setDistricts(data.districts));
+
+    if (cityCode != "") {
+      fetch(`https://provinces.open-api.vn/api/p/${cityCode}/?depth=3`)
+        .then((response) => response.json())
+        .then((data) => setDistricts(data.districts));
+    } else {
+      setSelectedDistrict({ name: "", code: "" });
+      setSelectedWard({ name: "", code: "" });
+    }
   };
 
   const handleDistrictChange = (e) => {
@@ -133,9 +137,13 @@ function FormUserInfo() {
       districtValue: districtName,
       wardValue: "",
     });
-    fetch(`https://provinces.open-api.vn/api/d/${districtCode}?depth=2`)
-      .then((response) => response.json())
-      .then((data) => setWards(data.wards));
+    if (districtCode != "") {
+      fetch(`https://provinces.open-api.vn/api/d/${districtCode}?depth=2`)
+        .then((response) => response.json())
+        .then((data) => setWards(data.wards));
+    } else {
+      setSelectedWard("");
+    }
   };
 
   const handleWardChange = (e) => {

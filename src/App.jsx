@@ -21,6 +21,7 @@ function App() {
       setLoading(false);
     }, 4000);
   }, []);
+  
   return (
     <AppContext>
       {loading ? (

@@ -78,7 +78,7 @@ textarea {
   outline: none;
   color: #fff;
 }
-.from-booking button {
+.from-booking #bookingTableBtn {
   border: none;
   margin-top: 20px;
   font-size: 20px;

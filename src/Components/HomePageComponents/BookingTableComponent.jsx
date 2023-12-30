@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import thumbnail from "../../../public/img/gallery/overView3.jpg";
 import { MdDownloadDone } from "react-icons/md";
+import { ToastContainer, toast } from "react-toastify";
 function BookingTableComponent() {
   const currentDate = new Date();
   const year = currentDate.getFullYear();
@@ -12,17 +13,26 @@ function BookingTableComponent() {
   const minutes = String(currentDate.getMinutes()).padStart(2, "0");
   const formattedDateTime = `${year}-${month}-${day}T${hours}:${minutes}`;
   const [confirmText, setConfirmText] = useState("Xác nhận");
-  const [bookingUser, setBookingUser] = useState({
-    bookingName: "",
-    bookingPhone: "",
-    bookingDateTime: "",
-    bookingGender: "Nam",
-    bookingQuality: "",
-    bookingRequirement: "",
-  });
   const handleBookingTable = () => {
-    console.log(formattedDateTime < document.querySelector("#dateTime").value);
     let isError = false;
+    if (
+      document.querySelector("#dateTime").value < formattedDateTime &&
+      document.querySelector("#dateTime").value != ""
+    ) {
+      toast.error(<span>Thời gian bạn đặt bàn không hợp lệ</span>, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        autoClose: 1000,
+        hideProgressBar: true,
+        position: "top-center",
+      });
+    }
     if (
       !document.querySelector("#bookingName").value.match(/^[\p{L}\s]{2,20}$/u)
     ) {
@@ -48,14 +58,13 @@ function BookingTableComponent() {
       isError = true;
     }
     if (isError === false) {
-      createBooking(bookingUser);
+      createBooking({});
       setTimeout(() => {
         setConfirmText("Xác nhận");
         document.querySelector("#bookingName").value = "";
         document.querySelector("#bookingPhone").value = "";
         document.querySelector("#cusQuality").value = "2";
         document.querySelector("#requirements").value = "";
-        document.querySelector("#male").checked = true;
         document.querySelector("#bookingTableBtn").style.pointerEvents =
           "visible";
       }, 4000);
@@ -163,6 +172,7 @@ function BookingTableComponent() {
           </Form>
         </Col>
       </Row>
+      <ToastContainer />
     </section>
   );
 }
