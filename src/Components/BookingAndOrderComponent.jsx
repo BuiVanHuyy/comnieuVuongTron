@@ -17,7 +17,7 @@ function BookingAndOrderComponent() {
         >
           Đặt Bàn
         </button>
-        <button onClick={navigate("/comnieuVuongTron/order-online")}>
+        <button onClick={() => navigate("/comnieuVuongTron/order-online")}>
           Đặt Món Online
         </button>
       </div>

@@ -82,7 +82,7 @@ function FooterComponet() {
           </div>
           <ul className="footer-menu-ul list-unstyled">
             <li className="footer-menu">
-              <Link to={"/about-us"}>
+              <Link to={"/comnieuVuongTron/about-us"}>
                 <FaArrowRight className="arrow-footer" />
                 GIỚI THIỆU
               </Link>
