@@ -17,7 +17,7 @@ function BookingTableComponent() {
     let isError = false;
     if (
       document.querySelector("#dateTime").value < formattedDateTime &&
-      document.querySelector("#dateTime").value != ""
+      document.querySelector("#dateTime").value != "" 
     ) {
       isError = true;
       toast.error(<span>Thời gian bạn đặt bàn không hợp lệ</span>, {
@@ -33,13 +33,29 @@ function BookingTableComponent() {
         hideProgressBar: true,
         position: "top-center",
       });
+    }else if (document.querySelector("#dateTime").value == "") {
+      toast.error(<span>Vui lòng chọn thời gian đặt bàn</span>, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        autoClose: 1000,
+        hideProgressBar: true,
+        position: "top-center",
+      });
     }
-    if (
-      !document.querySelector("#bookingName").value.match(/^[\p{L}\s]{2,20}$/u)
-    ) {
-      document.querySelector("#bookingName").value = "Lỗi: Tên không hợp lệ";
-      isError = true;
-    }
+      if (
+        !document
+          .querySelector("#bookingName")
+          .value.match(/^[\p{L}\s]{2,20}$/u)
+      ) {
+        document.querySelector("#bookingName").value = "Lỗi: Tên không hợp lệ";
+        isError = true;
+      }
     if (
       !document
         .querySelector("#bookingPhone")
