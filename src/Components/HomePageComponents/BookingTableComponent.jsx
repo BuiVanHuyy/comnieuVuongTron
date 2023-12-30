@@ -19,6 +19,7 @@ function BookingTableComponent() {
       document.querySelector("#dateTime").value < formattedDateTime &&
       document.querySelector("#dateTime").value != ""
     ) {
+      isError = true;
       toast.error(<span>Thời gian bạn đặt bàn không hợp lệ</span>, {
         position: "top-right",
         autoClose: 5000,
