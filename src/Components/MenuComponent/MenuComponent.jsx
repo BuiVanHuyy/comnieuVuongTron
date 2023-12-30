@@ -8,7 +8,7 @@ function MenuComponent() {
   const { menuData, idMenu, setIdMenu } = useContext(Context);
   useEffect(() => {
     document.title = "Thực đơn nhà hàng";
-    if (idMenu) {
+    if (idMenu != undefined) {
       document.getElementById(idMenu).scrollIntoView();
       setIdMenu(undefined);
     }
@@ -92,10 +92,7 @@ function MenuComponent() {
                     } flex-wrap align-items-center`}
                   >
                     <div className="col-12 col-md-4">
-                      <img
-                        className="rounded"
-                        src={item.thumb}
-                      />
+                      <img className="rounded" src={item.thumb} />
                     </div>
                     <div className="col-12 col-md-8 dish-list">
                       <h4 className="sub-dish-type mt-2 text-center">
