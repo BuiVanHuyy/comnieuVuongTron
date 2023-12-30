@@ -762,9 +762,6 @@ footer p.footer-bot {
     font-size: 15px;
   }
 }
-.confirm-container {
-  display: none;
-}
 .confirm-title {
   color: var(--primary_color);
   font-weight: 600;

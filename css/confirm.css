@@ -23,6 +23,9 @@
 .cart-product-requirement {
   font-size: 13px;
 }
+.confirm-container, #backToHomeBtn {
+  display: none;
+}
 @media (max-width: 1110px) {
   .confirm-table-heading {
     font-size: 18px;
@@ -120,6 +123,15 @@
     font-size: 14px !important;
   }
   .confirm-button {
+    font-size: 13px;
+  }
+  #modalTableReciept {
+    width: 100% !important;
+  }
+  .confirm-title {
+    font-size: 22px;
+  }
+  .list-group-item {
     font-size: 13px;
   }
 }
